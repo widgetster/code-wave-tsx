@@ -1,0 +1,52 @@
+/* FOURTH BLOCK */
+.fourth-block-container{
+    padding: 20px 350px 0 350px;
+}
+
+.fourth-block-bg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(49, 49, 129);
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.fourth-block-left-container{
+    display: flex;
+    align-items: center;
+}
+
+.rocket-img{
+    height: 50px;
+    margin-right: 15px;
+}
+
+.ready-to-start-p{
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.join-thousands-p{
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.start-learning-today-button{
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: darkblue;
+    font-weight: 600;
+}
+
+.start-learning-today-button:hover{
+    cursor: pointer;
+    background-color: rgb(231, 231, 255);
+    transition: background-color 0.25s;
+}
