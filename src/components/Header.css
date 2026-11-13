@@ -1,0 +1,80 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-left-container{
+    display: flex;
+    align-items: center;
+}
+
+.header-left-container:hover{
+    cursor: pointer;
+}
+
+.header-logo-img{
+    height: 50px;
+}
+
+.header-codewave-p{
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    margin: 0 0;
+    color: darkblue;
+}
+
+.header-middle-container{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.header-middle-container div{
+    border-bottom: 2px solid rgb(0, 0, 139, 0);
+    transition: border-bottom-color 0.25s;
+}
+
+.header-middle-container div p:hover{
+    cursor: pointer;
+}
+
+.header-middle-container div:has(p:hover) {
+  border-bottom: 2px solid rgb(0, 0, 139, 1);
+  transition: border-bottom-color 0.25s;
+}
+
+.header-login-button{
+    border: 1px solid darkblue;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: darkblue;
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+.header-login-button:hover{
+    cursor: pointer;
+    background-color: rgb(61, 61, 195,0.1);
+    transition: background-color 0.25s;    
+}
+
+.signup-login-button{
+    padding: 10px 20px;
+    background-color: rgb(61, 61, 195);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    height: 37.6px;
+    font-weight: bold;
+}
+
+.signup-login-button:hover{
+    cursor: pointer;
+    background-color: rgb(61, 61, 195, 0.8);
+    transition: background-color 0.25s;
+}
