@@ -4,6 +4,7 @@ import { FirstBlock } from './components/FirstBlock'
 import { SecondBlock } from './components/SecondBlock'
 import { ThirdBlock } from './components/ThirdBlock'
 import { FourthBlock } from './components/FourthBlock'
+import { Footer } from './components/Footer'
 
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
         <FirstBlock />
         <SecondBlock />
         <ThirdBlock />
-        <FourthBlock />
+        <FourthBlock />        
       </main>
+
+      <Footer />
     </>
 
 

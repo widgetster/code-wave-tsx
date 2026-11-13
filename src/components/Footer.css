@@ -1,0 +1,90 @@
+/* FOOTER */
+.ftr-container{
+    background-color: rgb(61, 61, 195, 0.04);
+}
+
+.ftr-top-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px 350px 0 350px;
+    /* align-items: center; */
+}
+
+.fifth-block-logo-name-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-bottom-img{
+    height: 40px;
+}
+
+.codewave-bottom{
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    margin: 0 0;
+    color: darkblue;
+}
+
+.empowering-the-p{
+    margin: 0 0;
+    font-size: 11px;
+    color: rgb(112, 112, 112);
+    width: 190px;
+    /* margin: 4px 0 0 0; */
+}
+
+.soc-med-img{
+    height: 50px;
+}
+
+.ftr-title-link-p{
+    font-family: Poppins, sans-serif;
+    margin: 0 0;
+    color: darkblue;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ftr-link-p,
+.ftr-link-get-the-p,
+.ftr-link-coding-tips-p{
+    font-size: 11px;
+    color: rgb(112, 112, 112);
+}
+
+.ftr-link-p:hover{
+    color: darkblue;
+    cursor: pointer;
+    transition: color 0.25s;
+}
+
+.ftr-enter-email{
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 7px;
+}
+
+.ftr-subscribe-button{
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+}
+
+.ftr-subscribe-button:hover{
+    cursor: pointer;
+    background-color: rgb(61, 61, 195,0.8);
+    transition: background-color 0.25s;    
+}
+
+.ftr-copyright{
+    text-align: center;
+    color: rgb(138, 138, 138);
+    font-size: 8px;
+    padding: 10px 0;
+    margin: 0;
+}
