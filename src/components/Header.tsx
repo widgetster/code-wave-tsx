@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header>
       <div className="header-left-container">
-        <img className="header-logo-img" src="/icon/logo.png" />
+        <img className="header-logo-img" src={`${import.meta.env.BASE_URL}icon/logo.png`} />
         <p className="header-codewave-p">CodeWave</p>
       </div>
 

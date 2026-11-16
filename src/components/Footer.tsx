@@ -8,16 +8,16 @@ export function Footer() {
       <div className="ftr-top-container">
         <div>
           <div className="fifth-block-logo-name-container">
-            <img className="logo-bottom-img" src="icon/logo.png" />
+            <img className="logo-bottom-img" src={`${import.meta.env.BASE_URL}icon/logo.png`} />
             <p className="codewave-bottom">CodeWave</p>
           </div>
 
           <p className="empowering-the-p">Empowering the next generation of developers through high-quality education and hands-on practice.</p>
 
           <div className="soc-med-container">
-            <img className="soc-med-img" src="icon/facebook.png" />
-            <img className="soc-med-img" src="icon/linkedin.png" />
-            <img className="soc-med-img" src="icon/instagram.png" />
+            <img className="soc-med-img" src={`${import.meta.env.BASE_URL}icon/facebook.png`} />
+            <img className="soc-med-img" src={`${import.meta.env.BASE_URL}icon/linkedin.png`} />
+            <img className="soc-med-img" src={`${import.meta.env.BASE_URL}icon/instagram.png`} />
           </div>
         </div>
 

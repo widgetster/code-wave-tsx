@@ -7,7 +7,7 @@ export function FourthBlock() {
     <div className="fourth-block-container">
       <div className="fourth-block-bg">
         <div className="fourth-block-left-container">
-          <img className="rocket-img" src="icon/rocket.png" />
+          <img className="rocket-img" src={`${import.meta.env.BASE_URL}icon/rocket.png`} />
 
           <div>
             <p className="ready-to-start-p">Ready to start your coding journey?</p>

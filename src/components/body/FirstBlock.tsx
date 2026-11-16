@@ -16,17 +16,17 @@ export function FirstBlock() {
 
           <div className="learner-review-container">
             <div className="learner-dp-container">
-              <img className="first-block-dp-img" src="/icon/dp1.jpg" />
-              <img className="first-block-dp-img" src="/icon/dp2.jpg" />
-              <img className="first-block-dp-img" src="/icon/dp3.jpg" />
-              <img className="first-block-dp-img" src="/icon/dp4.jpg" />
+              <img className="first-block-dp-img" src={`${import.meta.env.BASE_URL}icon/dp1.jpg`} />
+              <img className="first-block-dp-img" src={`${import.meta.env.BASE_URL}icon/dp2.jpg`} />
+              <img className="first-block-dp-img" src={`${import.meta.env.BASE_URL}icon/dp3.jpg`} />
+              <img className="first-block-dp-img" src={`${import.meta.env.BASE_URL}icon/dp4.jpg`} />
             </div>
 
             <div className="join-and-review-container">
               <p className="joint-learners-p">Join 150,000+ learners worldwide</p>
 
               <div className="fivestar-review-container">
-                <img className="fivestar-img" src="/icon/fivestar.png" />
+                <img className="fivestar-img" src={`${import.meta.env.BASE_URL}icon/fivestar.png`} />
                 <p className="rating-p">4.9/5 from 12,500 reviews</p>
               </div>
 
@@ -35,7 +35,7 @@ export function FirstBlock() {
           </div>
         </div>
 
-        <img className="laptop-img" src="/picture/laptop.png" />
+        <img className="laptop-img" src={`${import.meta.env.BASE_URL}picture/laptop.png`} />
       </div>
     </div>
   )

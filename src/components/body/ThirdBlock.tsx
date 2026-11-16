@@ -6,11 +6,11 @@ export function ThirdBlock() {
   return (
     <div className="third-block-container">
       <div className="third-block-left-bg">
-        <img className="third-block-quote-img" src="icon/quote.png" />
+        <img className="third-block-quote-img" src={`${import.meta.env.BASE_URL}icon/quote.png`} />
         <p className="third-block-quote-p"> CodeWave transformed the way I learn. The courses are well-structured, the projects are practical, and the community is incredibly helpful!</p>
 
         <div className="third-block-left-third-row-container">
-          <img className="third-block-profile-img" src="icon/dp5.jpg" />
+          <img className="third-block-profile-img" src={`${import.meta.env.BASE_URL}icon/dp5.jpg`} />
 
           <div>
             <p className="third-block-name-p">Priya Sharma</p>
@@ -24,7 +24,7 @@ export function ThirdBlock() {
 
       <div className="third-block-right-container">
         <div className="third-block-right-benefit-bg">
-          <img className="benefit-img" src="icon/check.png" />
+          <img className="benefit-img" src={`${import.meta.env.BASE_URL}icon/check.png`} />
 
           <div>
             <p className="benefit-name-p"> Job-ready skills</p>
@@ -33,7 +33,7 @@ export function ThirdBlock() {
         </div>
 
         <div className="third-block-right-benefit-bg">
-          <img className="benefit-img" src="icon/check.png" />
+          <img className="benefit-img" src={`${import.meta.env.BASE_URL}icon/check.png`} />
 
           <div>
             <p className="benefit-name-p"> Learn at your own pace</p>
@@ -42,7 +42,7 @@ export function ThirdBlock() {
         </div>
 
         <div className="third-block-right-benefit-bg">
-          <img className="benefit-img" src="icon/check.png" />
+          <img className="benefit-img" src={`${import.meta.env.BASE_URL}icon/check.png`} />
 
           <div>
             <p className="benefit-name-p"> Certificates that count</p>

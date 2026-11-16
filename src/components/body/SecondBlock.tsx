@@ -13,7 +13,7 @@ export function SecondBlock() {
       <div className="row-course-option-container">
         <div className="course-option-bg">
           <div className="course-container">
-            <img className="js-img" src="picture/js.jpeg" />
+            <img className="js-img" src={`${import.meta.env.BASE_URL}picture/js.jpeg`} />
 
             <div>
               <p className="javascript-fundamentals-p">JavaScript Fundamentals</p>
@@ -21,17 +21,17 @@ export function SecondBlock() {
 
               <div className="course-stats-container">
                 <div className="level-container">
-                  <img className="green-img" src="icon/green.png" />
+                  <img className="green-img" src={`${import.meta.env.BASE_URL}icon/green.png`} />
                   <p className="level-p">Beginner</p>
                 </div>
 
                 <div className="duration-container">
-                  <img className="time-img" src="icon/time.png" />
+                  <img className="time-img" src={`${import.meta.env.BASE_URL}icon/time.png`} />
                   <p className="level-p">6 hrs</p>
                 </div>
 
                 <div className="rating-container">
-                  <img className="star-img" src="icon/star.png" />
+                  <img className="star-img" src={`${import.meta.env.BASE_URL}icon/star.png`} />
                   <p className="level-p">4.9/5(2.1k)</p>
                 </div>
 
@@ -44,7 +44,7 @@ export function SecondBlock() {
 
         <div className="course-option-bg">
           <div className="course-container">
-            <img className="js-img" src="picture/react.png" />
+            <img className="js-img" src={`${import.meta.env.BASE_URL}picture/react.png`} />
 
             <div>
               <p className="javascript-fundamentals-p">React for Beginners</p>
@@ -52,17 +52,17 @@ export function SecondBlock() {
 
               <div className="course-stats-container">
                 <div className="level-container">
-                  <img className="green-img" src="icon/green.png" />
+                  <img className="green-img" src={`${import.meta.env.BASE_URL}icon/green.png`} />
                   <p className="level-p">Beginner</p>
                 </div>
 
                 <div className="duration-container">
-                  <img className="time-img" src="icon/time.png" />
+                  <img className="time-img" src={`${import.meta.env.BASE_URL}icon/time.png`} />
                   <p className="level-p">8.5 hrs</p>
                 </div>
 
                 <div className="rating-container">
-                  <img className="star-img" src="icon/star.png" />
+                  <img className="star-img" src={`${import.meta.env.BASE_URL}icon/star.png`} />
                   <p className="level-p">4.8/5 (3.2k)</p>
                 </div>
 
@@ -77,24 +77,24 @@ export function SecondBlock() {
       <div className="row-course-option-container">
         <div className="course-option-bg">
           <div className="course-container">
-            <img className="js-img" src="picture/html.png" />
+            <img className="js-img" src={`${import.meta.env.BASE_URL}picture/html.png`} />
             <div>
               <p className="javascript-fundamentals-p">HTML & CSS Crash Course</p>
               <p className="learn-the-core-p">Master the building blocks of the web and create breautiful layouts.</p>
 
               <div className="course-stats-container">
                 <div className="level-container">
-                  <img className="green-img" src="icon/green.png" />
+                  <img className="green-img" src={`${import.meta.env.BASE_URL}icon/green.png`} />
                   <p className="level-p">Beginner</p>
                 </div>
 
                 <div className="duration-container">
-                  <img className="time-img" src="icon/time.png" />
+                  <img className="time-img" src={`${import.meta.env.BASE_URL}icon/time.png`} />
                   <p className="level-p">5.5 hrs</p>
                 </div>
 
                 <div className="rating-container">
-                  <img className="star-img" src="icon/star.png" />
+                  <img className="star-img" src={`${import.meta.env.BASE_URL}icon/star.png`} />
                   <p className="level-p">4.7/5(3.7k)</p>
                 </div>
 
@@ -107,7 +107,7 @@ export function SecondBlock() {
 
         <div className="course-option-bg">
           <div className="course-container">
-            <img className="js-img" src="picture/nodejs.webp" />
+            <img className="js-img" src={`${import.meta.env.BASE_URL}picture/nodejs.webp`} />
 
             <div>
               <p className="javascript-fundamentals-p">Node.js Essentials</p>
@@ -115,17 +115,17 @@ export function SecondBlock() {
 
               <div className="course-stats-container">
                 <div className="level-container">
-                  <img className="green-img" src="icon/green.png" />
+                  <img className="green-img" src={`${import.meta.env.BASE_URL}icon/green.png`} />
                   <p className="level-p">Beginner</p>
                 </div>
 
                 <div className="duration-container">
-                  <img className="time-img" src="icon/time.png" />
+                  <img className="time-img" src={`${import.meta.env.BASE_URL}icon/time.png`} />
                   <p className="level-p">9 hrs</p>
                 </div>
 
                 <div className="rating-container">
-                  <img className="star-img" src="icon/star.png" />
+                  <img className="star-img" src={`${import.meta.env.BASE_URL}icon/star.png`} />
                   <p className="level-p">4.9/5 (4.3k)</p>
                 </div>
 
