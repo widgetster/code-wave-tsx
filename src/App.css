@@ -1,5 +1,26 @@
+:root{
+    --content-width: 1200px;
+    --page-gutter: 24px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Inter", sans-serif;
-    /* height: 3000px; */
     margin: 0;
+}
+
+.page-container{
+    width: min(var(--content-width), calc(100% - 2 * var(--page-gutter)));
+    margin-inline: auto;
+}
+
+@media (max-width: 600px){
+    :root{
+        --page-gutter: 16px;
+    }
 }

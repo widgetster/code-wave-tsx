@@ -4,7 +4,7 @@ import './FourthBlock.css'
 export function FourthBlock() {
 
   return (
-    <div className="fourth-block-container">
+    <div className="fourth-block-container page-container">
       <div className="fourth-block-bg">
         <div className="fourth-block-left-container">
           <img className="rocket-img" src={`${import.meta.env.BASE_URL}icon/rocket.png`} />

@@ -1,6 +1,6 @@
 /* FOURTH BLOCK */
 .fourth-block-container{
-    padding: 20px 350px 0 350px;
+    padding-top: 20px;
 }
 
 .fourth-block-bg{
@@ -8,7 +8,8 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgb(49, 49, 129);
-    padding: 20px 0;
+    gap: 24px;
+    padding: 20px 30px;
     border-radius: 10px;
 }
 
@@ -19,6 +20,7 @@
 
 .rocket-img{
     height: 50px;
+    flex-shrink: 0;
     margin-right: 15px;
 }
 
@@ -37,6 +39,7 @@
 }
 
 .start-learning-today-button{
+    flex-shrink: 0;
     background-color: white;
     border: none;
     border-radius: 6px;
@@ -49,4 +52,12 @@
     cursor: pointer;
     background-color: rgb(231, 231, 255);
     transition: background-color 0.25s;
+}
+
+@media (max-width: 800px){
+    .fourth-block-bg{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+    }
 }

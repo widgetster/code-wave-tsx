@@ -7,7 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 350px;
+    gap: 32px;
+}
+
+.first-block-container > div{
+    flex: 0 1 420px;
+    min-width: 0;
 }
 
 .learn-to-code-p{
@@ -27,7 +32,8 @@
 }
 
 .codewave-helps-you-p{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 25px 0;
     font-weight: 400;
 }
@@ -108,7 +114,8 @@
 }
 
 .laptop-img{
-    height: 500px;
+    width: min(56%, 667px);
+    height: auto;
     border-radius: 10px;
 }
 
@@ -120,4 +127,48 @@
 .join-and-review-container{
     padding: 5px 0;
     margin-left: 8px;
+}
+
+@media (max-width: 1100px){
+    .learn-to-code-p,
+    .build-the-future-p{
+        font-size: clamp(32px, 4vw, 50px);
+    }
+
+    .build-the-future-p{
+        margin-block: -8px;
+    }
+}
+
+@media (max-width: 800px){
+    .first-block-container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-block: 40px;
+    }
+
+    .first-block-container > div{
+        flex: auto;
+        width: 100%;
+    }
+
+    .laptop-img{
+        width: min(100%, 667px);
+        align-self: center;
+    }
+}
+
+@media (max-width: 420px){
+    .learner-review-container{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .join-and-review-container{
+        margin-left: 0;
+    }
+
+    .start-learning-button{
+        margin-right: 10px;
+    }
 }

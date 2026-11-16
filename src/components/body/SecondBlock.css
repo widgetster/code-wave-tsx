@@ -1,6 +1,6 @@
 /* SECOND BLOCK */
 .second-block-container{
-    padding: 20px 350px 0 350px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -33,10 +33,10 @@
 }
 
 .row-course-option-container{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 575px));
     justify-content: center;
-    column-gap: 10px;
+    gap: 10px;
 }
 
 .course-option-bg{
@@ -47,13 +47,19 @@
 
 .course-container{
     display: flex;
+    gap: 15px;
+}
+
+.course-container > div{
+    flex: 1;
+    min-width: 0;
 }
 
 .js-img{
     height: 110px;
     width: 200px;
     border-radius: 6px;
-    margin-right: 15px;
+    flex-shrink: 0;
 }
 
 .javascript-fundamentals-p{
@@ -67,7 +73,7 @@
 .learn-the-core-p{
     font-size: 13px;
     color: rgb(112, 112, 112);
-    width: 280px;
+    max-width: 280px;
     margin: 0 0 8px 0;
 }
 
@@ -85,7 +91,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    width: 330px;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .level-container,
@@ -117,4 +124,47 @@
     cursor: pointer;
     background-color: rgb(61, 61, 195, 0.1);
     transition: background-color 0.25s;
+}
+
+@media (min-width: 1001px) and (max-width: 1200px){
+    .js-img{
+        width: 150px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1000px){
+    .row-course-option-container{
+        grid-template-columns: minmax(0, 575px);
+    }
+}
+
+@media (max-width: 600px){
+    .popular-courses-view-all-courses{
+        gap: 16px;
+    }
+
+    .popular-courses-p{
+        font-size: 18px;
+    }
+
+    .view-all-courses-p{
+        text-align: right;
+    }
+
+    .course-container{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .js-img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 20 / 11;
+        object-fit: cover;
+    }
+
+    .learn-the-core-p{
+        max-width: none;
+    }
 }

@@ -5,7 +5,7 @@ export function FirstBlock() {
 
   return (
     <div className="first-block-bg">
-      <div className="first-block-container">
+      <div className="first-block-container page-container">
         <div>
           <p className="learn-to-code-p">Learn to code.</p>
           <p className="build-the-future-p">Build the future.</p>

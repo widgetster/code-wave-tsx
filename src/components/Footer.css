@@ -1,14 +1,23 @@
 /* FOOTER */
 .ftr-container{
     background-color: rgb(61, 61, 195, 0.04);
+    margin-top: 20px;
 }
 
 .ftr-top-container{
+    display: grid;
+    grid-template-columns: minmax(170px, 1.2fr) repeat(4, minmax(0, 0.75fr)) minmax(250px, 1.7fr);
+    gap: 24px;
+    padding-top: 20px;
+}
+
+.ftr-top-container > div{
+    min-width: 0;
+}
+
+.ftr-top-container > div:last-child > div{
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 20px 350px 0 350px;
-    /* align-items: center; */
+    gap: 7px;
 }
 
 .fifth-block-logo-name-container{
@@ -31,7 +40,7 @@
     margin: 0 0;
     font-size: 11px;
     color: rgb(112, 112, 112);
-    width: 190px;
+    max-width: 190px;
     /* margin: 4px 0 0 0; */
 }
 
@@ -61,10 +70,11 @@
 }
 
 .ftr-enter-email{
+    width: 100%;
+    min-width: 0;
     padding: 10px 18px;
     border-radius: 6px;
     border: none;
-    margin-right: 7px;
 }
 
 .ftr-subscribe-button{
@@ -87,4 +97,21 @@
     font-size: 8px;
     padding: 10px 0;
     margin: 0;
+}
+
+@media (max-width: 1100px){
+    .ftr-top-container{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px){
+    .ftr-top-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ftr-top-container > div:first-child,
+    .ftr-top-container > div:last-child{
+        grid-column: 1 / -1;
+    }
 }

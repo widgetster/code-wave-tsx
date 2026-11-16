@@ -4,7 +4,7 @@ import './SecondBlock.css'
 export function SecondBlock() {
 
   return (
-    <div className="second-block-container">
+    <div className="second-block-container page-container">
       <div className="popular-courses-view-all-courses">
         <p className="popular-courses-p">Popular Courses</p>
         <p className="view-all-courses-p">View All Courses</p>

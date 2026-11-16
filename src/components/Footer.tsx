@@ -5,7 +5,7 @@ export function Footer() {
 
   return (
     <footer className="ftr-container">
-      <div className="ftr-top-container">
+      <div className="ftr-top-container page-container">
         <div>
           <div className="fifth-block-logo-name-container">
             <img className="logo-bottom-img" src={`${import.meta.env.BASE_URL}icon/logo.png`} />
