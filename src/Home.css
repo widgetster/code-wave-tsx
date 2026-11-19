@@ -1,0 +1,44 @@
+.home-resources {
+    padding-block: 24px 4px;
+}
+
+.home-resources h2,
+.home-resource h3 {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+
+.home-resources h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.home-resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+    gap: 10px;
+}
+
+.home-resource {
+    display: block;
+    padding: 16px 20px;
+    background-color: rgb(61, 61, 195, 0.04);
+    border: 1px solid #e1e2ed;
+    border-radius: 10px;
+    transition: border-color 0.25s;
+}
+
+.home-resource:hover {
+    border-color: #3d3dc3;
+}
+
+.home-resource h3 {
+    color: darkblue;
+    font-size: 1rem;
+}
+
+.home-resource p {
+    color: #4e5265;
+    line-height: 1.5;
+    margin: 6px 0 0;
+}

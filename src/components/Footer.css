@@ -69,6 +69,12 @@
     transition: color 0.25s;
 }
 
+a.ftr-link-p{
+    display: block;
+    width: fit-content;
+    margin-block: 1em;
+}
+
 .ftr-enter-email{
     width: 100%;
     min-width: 0;

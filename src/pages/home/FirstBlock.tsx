@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './FirstBlock.css'
 
 
@@ -7,12 +8,16 @@ export function FirstBlock() {
     <div className="first-block-bg">
       <div className="first-block-container page-container">
         <div>
-          <p className="learn-to-code-p">Learn to code.</p>
-          <p className="build-the-future-p">Build the future.</p>
+          <h1 className="home-hero-title">
+            <span className="learn-to-code-p">Learn to code.</span>
+            <span className="build-the-future-p">Build the future.</span>
+          </h1>
           <p className="codewave-helps-you-p">CodeWave helps you master in-demand skills with hands-on projects, expert-led courses, and a supportive community.</p>
 
-          <button className="start-learning-button">Start Learning</button>
-          <button className="watch-demo-button">Watch Demo</button>
+          <div className="home-hero-actions">
+            <Link className="start-learning-button" to="/courses">Start Learning</Link>
+            <Link className="explore-roadmaps-button" to="/roadmaps">Explore Roadmaps</Link>
+          </div>
 
           <div className="learner-review-container">
             <div className="learner-dp-container">
@@ -35,7 +40,7 @@ export function FirstBlock() {
           </div>
         </div>
 
-        <img className="laptop-img" src={`${import.meta.env.BASE_URL}picture/laptop.png`} />
+        <img className="laptop-img" src={`${import.meta.env.BASE_URL}picture/laptop.png`} alt="" />
       </div>
     </div>
   )

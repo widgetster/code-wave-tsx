@@ -110,7 +110,7 @@
     height: 14px;
 }
 
-.save-your-seat-button{
+.course-outline-link{
     border: 1px solid darkblue;
     background-color: white;
     border-radius: 6px;
@@ -120,7 +120,7 @@
     font-weight: 600;
 }
 
-.save-your-seat-button:hover{
+.course-outline-link:hover{
     cursor: pointer;
     background-color: rgb(61, 61, 195, 0.1);
     transition: background-color 0.25s;

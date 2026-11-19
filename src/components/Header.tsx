@@ -1,5 +1,5 @@
 import './Header.css'
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 
 
@@ -8,20 +8,17 @@ export function Header() {
   return (
     <header>
       <div className="header-container page-container">
-        <Link to="/">
-          <div className="header-left-container">
-            <img className="header-logo-img" src={`${import.meta.env.BASE_URL}icon/logo.png`} />
-            <p className="header-codewave-p">CodeWave</p>
-          </div>
+        <Link className="header-left-container" to="/">
+          <img className="header-logo-img" src={`${import.meta.env.BASE_URL}icon/logo.png`} alt="" />
+          <span className="header-codewave-p">CodeWave</span>
         </Link>
 
-
-        <div className="header-middle-container">
-          <Link to="/courses">Courses</Link>
-          <Link to="/bootcamps">Bootcamps</Link>
-          <Link to="/roadmaps">Roadmaps</Link>
-          <Link to="/blog">Blog</Link>
-        </div>
+        <nav className="header-middle-container" aria-label="Main navigation">
+          <NavLink to="/courses">Courses</NavLink>
+          <NavLink to="/bootcamps">Bootcamps</NavLink>
+          <NavLink to="/roadmaps">Roadmaps</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
+        </nav>
 
         <div className="header-actions">
           <button className="header-login-button">Log in</button>

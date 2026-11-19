@@ -15,6 +15,14 @@
     min-width: 0;
 }
 
+.home-hero-title{
+    margin: 0;
+}
+
+.home-hero-title span{
+    display: block;
+}
+
 .learn-to-code-p{
     font-family: Poppins, sans-serif;
     font-size: 50px;
@@ -38,20 +46,27 @@
     font-weight: 400;
 }
 
+.home-hero-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .start-learning-button,
-.watch-demo-button{
+.explore-roadmaps-button{
+    display: inline-flex;
+    align-items: center;
     border-radius: 6px;
-    padding: 12px 20px;
+    padding: 10px 16px;
     font-size: 14px;
     font-weight: bold;
-    height: 42px;
+    min-height: 42px;
 }
 
 .start-learning-button{
     background-color: rgb(61, 61, 195);
     color: white;
     border: none;
-    margin-right: 20px;
 }
 
 .start-learning-button:hover{
@@ -60,13 +75,13 @@
     transition: background-color 0.25s;
 }
 
-.watch-demo-button{
+.explore-roadmaps-button{
     border: 1px solid darkblue;
     background-color: white;
     color: darkblue;
 }
 
-.watch-demo-button:hover{
+.explore-roadmaps-button:hover{
     cursor: pointer;
     background-color: rgb(61, 61, 195, 0.1);
     transition: background-color 0.25s;
@@ -166,9 +181,5 @@
 
     .join-and-review-container{
         margin-left: 0;
-    }
-
-    .start-learning-button{
-        margin-right: 10px;
     }
 }

@@ -40,21 +40,21 @@ header{
 .header-middle-container{
     display: flex;
     align-items: center;
-    column-gap: 60px;
+    gap: 4px 40px;
 }
 
-.header-middle-container div{
-    border-bottom: 2px solid rgb(0, 0, 139, 0);
-    transition: border-bottom-color 0.25s;
+.header-middle-container a{
+    color: #343449;
+    padding: 8px 6px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.25s, color 0.25s;
 }
 
-.header-middle-container div p:hover{
-    cursor: pointer;
-}
-
-.header-middle-container div:has(p:hover) {
-  border-bottom: 2px solid rgb(0, 0, 139, 1);
-  transition: border-bottom-color 0.25s;
+.header-middle-container a:hover,
+.header-middle-container a[aria-current="page"]{
+    background-color: rgb(61, 61, 195, 0.08);
+    color: darkblue;
 }
 
 .header-login-button{
@@ -106,12 +106,9 @@ header{
         order: 1;
         width: 100%;
         justify-content: center;
-        gap: clamp(16px, 5vw, 40px);
-    }
-
-    .header-middle-container p{
-        margin-block: 8px;
-        font-size: 14px;
+        flex-wrap: wrap;
+        gap: 4px clamp(6px, 2vw, 20px);
+        font-size: 0.875rem;
     }
 }
 

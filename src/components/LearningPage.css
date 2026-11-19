@@ -1,0 +1,178 @@
+.learning-page {
+    --learning-accent: #3d3dc3;
+    --learning-ink: darkblue;
+    --learning-text: #4e5265;
+    --learning-border: #e1e2ed;
+    --learning-tint: #f7f7fd;
+}
+
+.learning-intro {
+    background-color: var(--learning-tint);
+    border-bottom: 1px solid var(--learning-border);
+    padding-block: clamp(32px, 6vw, 72px);
+}
+
+.learning-intro h1,
+.learning-card h2,
+.learning-article h2 {
+    color: var(--learning-ink);
+    font-family: Poppins, sans-serif;
+    line-height: 1.2;
+}
+
+.learning-intro h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.125rem);
+}
+
+.learning-intro p {
+    margin: 12px 0 0;
+    max-width: 58ch;
+}
+
+.learning-intro p,
+.learning-card p,
+.learning-card li,
+.learning-article p {
+    color: var(--learning-text);
+    line-height: 1.6;
+}
+
+.learning-content {
+    padding-block: clamp(24px, 4vw, 48px);
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.learning-card {
+    display: grid;
+    gap: 14px;
+    padding: clamp(18px, 3vw, 26px);
+    border: 1px solid var(--learning-border);
+    border-radius: 10px;
+    scroll-margin-top: 20px;
+}
+
+.learning-card-selected {
+    border-color: var(--learning-accent);
+    box-shadow: 0 0 0 2px var(--learning-tint);
+}
+
+.learning-card h2,
+.learning-article h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.learning-card p,
+.learning-article p,
+.learning-card ol,
+.learning-card ul {
+    margin: 0;
+}
+
+.learning-card .learning-meta,
+.learning-article .learning-meta {
+    color: var(--learning-accent);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.learning-card ol,
+.learning-card ul {
+    padding-inline-start: 1.25rem;
+}
+
+.learning-card li + li {
+    margin-top: 8px;
+}
+
+.learning-card li::marker {
+    color: var(--learning-accent);
+    font-weight: 600;
+}
+
+.course-card-overview {
+    display: grid;
+    grid-template-columns: minmax(96px, 32%) minmax(0, 1fr);
+    gap: 16px;
+    align-items: start;
+}
+
+.course-card-overview img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.course-card-overview h2 {
+    margin-block: 4px 6px;
+}
+
+.learning-details {
+    border-top: 1px solid var(--learning-border);
+    padding-top: 12px;
+}
+
+.learning-details summary,
+.learning-link {
+    width: fit-content;
+    color: var(--learning-ink);
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.learning-details summary:hover,
+.learning-link:hover {
+    color: var(--learning-accent);
+}
+
+.learning-details > div {
+    display: grid;
+    gap: 12px;
+    padding-top: 12px;
+}
+
+.learning-article {
+    display: grid;
+    gap: 8px;
+    padding-block: 24px;
+    border-bottom: 1px solid var(--learning-border);
+}
+
+.learning-article:first-child {
+    padding-top: 0;
+}
+
+.learning-article .learning-details {
+    border-top: 0;
+    padding-top: 4px;
+}
+
+.learning-articles {
+    max-width: 72ch;
+}
+
+@media (max-width: 800px) {
+    .course-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .course-card-overview {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

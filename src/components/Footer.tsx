@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './Footer.css'
 
 
@@ -24,9 +25,9 @@ export function Footer() {
         <div>
           <p className="ftr-title-link-p">Platform</p>
 
-          <p className="ftr-link-p">Courses</p>
-          <p className="ftr-link-p">Bootcamps</p>
-          <p className="ftr-link-p">Roadmaps</p>
+          <Link className="ftr-link-p" to="/courses">Courses</Link>
+          <Link className="ftr-link-p" to="/bootcamps">Bootcamps</Link>
+          <Link className="ftr-link-p" to="/roadmaps">Roadmaps</Link>
           <p className="ftr-link-p">Projects</p>
           <p className="ftr-link-p">Pricing</p>
         </div>
@@ -34,7 +35,7 @@ export function Footer() {
         <div>
           <p className="ftr-title-link-p">Resources</p>
 
-          <p className="ftr-link-p">Blog</p>
+          <Link className="ftr-link-p" to="/blog">Blog</Link>
           <p className="ftr-link-p">Documentation</p>
           <p className="ftr-link-p">Guides</p>
           <p className="ftr-link-p">Cheatsheets</p>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './FourthBlock.css'
 
 
@@ -15,7 +16,7 @@ export function FourthBlock() {
           </div>
         </div>
 
-        <button className="start-learning-today-button">Start Learning Today</button>
+        <Link className="start-learning-today-button" to="/courses">Start Learning Today</Link>
       </div>
 
     </div>
