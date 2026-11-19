@@ -1,28 +1,26 @@
 import './App.css'
-import { Header } from './components/Header'
-import { FirstBlock } from './components/body/FirstBlock'
-import { SecondBlock } from './components/body/SecondBlock'
-import { ThirdBlock } from './components/body/ThirdBlock'
-import { FourthBlock } from './components/body/FourthBlock'
-import { Footer } from './components/Footer'
+import { Home } from './Home';
+import { Routes, Route } from 'react-router';
+import { Courses } from './Courses';
+import { Bootcamps } from './Bootcamps';
+import { Roadmaps } from './Roadmaps';
+import { Blog } from './Blog';
 
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="courses" element={<Courses />} />
+        <Route path="bootcamps" element={<Bootcamps />} />
+        <Route path="roadmaps" element={<Roadmaps />} />
+        <Route path="blog" element={<Blog />} />
 
-      <main>
-        <FirstBlock />
-        <SecondBlock />
-        <ThirdBlock />
-        <FourthBlock />        
-      </main>
+      </Routes>
 
-      <Footer />
     </>
-
 
   )
 }

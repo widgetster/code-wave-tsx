@@ -1,4 +1,6 @@
 import './Header.css'
+import { Link } from 'react-router';
+
 
 
 export function Header() {
@@ -6,16 +8,19 @@ export function Header() {
   return (
     <header>
       <div className="header-container page-container">
-        <div className="header-left-container">
-          <img className="header-logo-img" src={`${import.meta.env.BASE_URL}icon/logo.png`} />
-          <p className="header-codewave-p">CodeWave</p>
-        </div>
+        <Link to="/">
+          <div className="header-left-container">
+            <img className="header-logo-img" src={`${import.meta.env.BASE_URL}icon/logo.png`} />
+            <p className="header-codewave-p">CodeWave</p>
+          </div>
+        </Link>
+
 
         <div className="header-middle-container">
-          <div><p>Courses</p></div>
-          <div><p>Bootcamps</p></div>
-          <div><p>Roadmaps</p></div>
-          <div><p>Blog</p></div>
+          <Link to="/courses">Courses</Link>
+          <Link to="/bootcamps">Bootcamps</Link>
+          <Link to="/roadmaps">Roadmaps</Link>
+          <Link to="/blog">Blog</Link>
         </div>
 
         <div className="header-actions">
