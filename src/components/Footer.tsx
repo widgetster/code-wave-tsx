@@ -64,8 +64,7 @@ export function Footer() {
         <div>
           <p className="ftr-title-link-p">Newsletter</p>
 
-          <p className="ftr-link-get-the-p">Get the latest updates and</p>
-          <p className="ftr-link-coding-tips-p">coding tips in your inbox</p>
+          <p className="ftr-newsletter-description">Get the latest updates and coding tips in your inbox.</p>
 
           <div>
             <input type="text" className="ftr-enter-email" placeholder="Enter your email" />
@@ -74,7 +73,7 @@ export function Footer() {
         </div>
       </div>
 
-      <p className="ftr-copyright">&copy; 2026 CodeWave. All rights reserved.</p>
+      <p className="ftr-copyright page-container">&copy; 2026 CodeWave. All rights reserved.</p>
     </footer>
   )
 

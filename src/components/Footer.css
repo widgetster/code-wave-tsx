@@ -1,14 +1,20 @@
 /* FOOTER */
 .ftr-container{
-    background-color: rgb(61, 61, 195, 0.04);
-    margin-top: 20px;
+    flex: 1;
+    background-color: #f3f4fb;
+    border-top: 1px solid #e1e2ed;
+    margin-top: 1.25rem;
+}
+
+.learning-page + .ftr-container{
+    margin-top: 0;
 }
 
 .ftr-top-container{
     display: grid;
     grid-template-columns: minmax(170px, 1.2fr) repeat(4, minmax(0, 0.75fr)) minmax(250px, 1.7fr);
-    gap: 24px;
-    padding-top: 20px;
+    gap: clamp(1.5rem, 2vw, 3rem);
+    padding-block: clamp(1.75rem, 2.5vw, 3.75rem) 1.5rem;
 }
 
 .ftr-top-container > div{
@@ -37,11 +43,8 @@
 }
 
 .empowering-the-p{
-    margin: 0 0;
-    font-size: 11px;
-    color: rgb(112, 112, 112);
-    max-width: 190px;
-    /* margin: 4px 0 0 0; */
+    margin: 0.5rem 0 0;
+    max-width: 30ch;
 }
 
 .soc-med-img{
@@ -50,17 +53,18 @@
 
 .ftr-title-link-p{
     font-family: Poppins, sans-serif;
-    margin: 0 0;
+    margin: 0;
     color: darkblue;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
+.empowering-the-p,
 .ftr-link-p,
-.ftr-link-get-the-p,
-.ftr-link-coding-tips-p{
-    font-size: 11px;
-    color: rgb(112, 112, 112);
+.ftr-newsletter-description{
+    font-size: clamp(0.875rem, 0.84rem + 0.12vw, 1rem);
+    line-height: 1.5;
+    color: #50546a;
 }
 
 .ftr-link-p:hover{
@@ -99,10 +103,11 @@ a.ftr-link-p{
 
 .ftr-copyright{
     text-align: center;
-    color: rgb(138, 138, 138);
-    font-size: 8px;
-    padding: 10px 0;
-    margin: 0;
+    color: #595d72;
+    font-size: 0.75rem;
+    border-top: 1px solid #e1e2ed;
+    padding-block: 1rem;
+    margin-block: 0;
 }
 
 @media (max-width: 1100px){

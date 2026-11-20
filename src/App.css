@@ -1,6 +1,6 @@
 :root{
-    --content-width: 1200px;
-    --page-gutter: 24px;
+    --content-width: clamp(75rem, 72vw, 132rem);
+    --page-gutter: clamp(1rem, 3vw, 3rem);
 }
 
 *,
@@ -18,10 +18,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-#root > main{
-    flex: 1;
+    min-height: 100dvh;
 }
 
 a{
@@ -37,10 +34,4 @@ a{
 .page-container{
     width: min(var(--content-width), calc(100% - 2 * var(--page-gutter)));
     margin-inline: auto;
-}
-
-@media (max-width: 600px){
-    :root{
-        --page-gutter: 16px;
-    }
 }

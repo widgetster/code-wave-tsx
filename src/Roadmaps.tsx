@@ -40,7 +40,7 @@ const roadmaps = [
 export function Roadmaps() {
   return (
     <LearningPage title="Roadmaps" description="Choose what you want to build and see which skills to learn in order.">
-      <div className="learning-grid">
+      <div className="learning-grid roadmap-grid">
         {roadmaps.map((roadmap) => (
           <article className="learning-card" key={roadmap.title}>
             <h2>{roadmap.title}</h2>

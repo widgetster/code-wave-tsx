@@ -34,7 +34,7 @@
 
 .row-course-option-container{
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 575px));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
     gap: 10px;
 }
@@ -56,8 +56,10 @@
 }
 
 .js-img{
-    height: 110px;
-    width: 200px;
+    width: min(38%, 18rem);
+    aspect-ratio: 20 / 11;
+    object-fit: cover;
+    align-self: start;
     border-radius: 6px;
     flex-shrink: 0;
 }
@@ -124,13 +126,6 @@
     cursor: pointer;
     background-color: rgb(61, 61, 195, 0.1);
     transition: background-color 0.25s;
-}
-
-@media (min-width: 1001px) and (max-width: 1200px){
-    .js-img{
-        width: 150px;
-        object-fit: cover;
-    }
 }
 
 @media (max-width: 1000px){
